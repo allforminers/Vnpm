@@ -2,18 +2,23 @@
 
 This is a Yescrypt, YesPower, Lyra2REv2, CPUpower, power2b, YesPowerSugar, sha256d and more algo mining pool based off of Node Open Mining Portal.
 
-
+```
 sudo apt-get update && sudo apt-get upgrade -y
-
+```
+```
 apt install git -y
-
+```
+```
 sudo apt install unzip -y
-
+```
+```
 redis-server --daemonize yes
+```
 
 or
-
+```
 npm install multi-hashing 
+```
 
 for dedic
 
