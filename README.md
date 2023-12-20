@@ -52,6 +52,14 @@ npm install
 
 ```
 
+```
+sudo apt-get install libdb5.3++-dev
+sudo apt-get install libminiupnpc-dev
+sudo apt-get update
+sudo apt-get install libminiupnpc17
+sudo apt-get update
+sudo apt-get install libzmq5
+```
 
 
 **If using Ubuntu 22.04** to install `libssl1.0-dev`
