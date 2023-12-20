@@ -24,6 +24,16 @@ for dedic
 
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
+
+**If using Ubuntu 20.04** to install `libssl1.0-dev`
+```
+sudo nano /etc/apt/sources.list
+deb http://security.ubuntu.com/ubuntu bionic-security main
+sudo apt update && apt-cache policy libssl1.0-dev
+sudo apt-get install libssl1.0-dev -y
+```
+
+
 ```bash
 sudo apt-get install build-essential libsodium-dev npm libboost-all-dev libgmp3-dev redis-server -y
 sudo apt install nodejs node-gyp libssl1.0-dev -y
@@ -35,16 +45,14 @@ sudo ln -sf /usr/local/bin/node /usr/bin/node
 sudo ln -sf /usr/local/bin/npm /usr/bin/npm
 git clone https://github.com/allforminers/Vnpm.git v-nomp
 cd v-nomp
+npm update
+npm audit fix
+npm rebuild
 npm install
+
 ```
 
-**If using Ubuntu 20.04** to install `libssl1.0-dev`
-```
-sudo nano /etc/apt/sources.list
-deb http://security.ubuntu.com/ubuntu bionic-security main
-sudo apt update && apt-cache policy libssl1.0-dev
-sudo apt-get install libssl1.0-dev -y
-```
+
 
 **If using Ubuntu 22.04** to install `libssl1.0-dev`
 ```
